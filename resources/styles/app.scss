@@ -1,0 +1,69 @@
+@use "vuetify";
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../../public/fonts/Roboto-Regular.ttf");
+}
+@font-face {
+  font-family: "Roboto Bold";
+  font-weight: 700;
+  src: url("../../public/fonts/Roboto-Bold.ttf");
+}
+
+* {
+  font-family: "Roboto" !important;
+  font-size: 16px;
+}
+.bg-blue {
+  background-color: #0d50b8 !important;
+}
+.rounded-10 {
+  border-radius: 10px !important;
+}
+.sticky-header {
+  thead tr th {
+    position: sticky;
+    z-index: 1;
+    background: #fff;
+  }
+
+  /* this will be the loading indicator */
+  thead tr:last-child th {
+    /* height of all previous header rows */
+    top: 48px;
+  }
+  thead tr:first-child th {
+    top: 0;
+  }
+
+  /* prevent scrolling behind sticky top row on focus */
+  tbody {
+    /* height of all previous header rows */
+    scroll-margin-top: 48px;
+  }
+}
+
+.font-weight-bold {
+  font-family: "Roboto Bold" !important;
+}
+// input{
+// 	@extend .rounded-10;
+// 	background-color: white;
+// }
+.h1 {
+  font-family: "Roboto Bold" !important;
+  font-size: 21px;
+}
+.router-link {
+  font-size: 14px;
+}
+.bold_text {
+  font-weight: bold !important;
+}
+.border__input-color {
+  border-color: rgba(171, 171, 171) !important;
+}
+
+// .v-skeleton-loader__text {
+//     height: 35px !important;
+// }
